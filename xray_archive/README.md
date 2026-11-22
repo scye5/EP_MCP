@@ -1,4 +1,4 @@
-# 爱因斯坦探针（Einstein Probe）候选体的 X 射线档案
+# X-ray archive: ROSAT, eROSITA and HiLiGT
 
 在 `xray_archive` 目录下运行这些 Python 3.10+ 客户端。它们以十进制度为单位接收候选体坐标。
 
