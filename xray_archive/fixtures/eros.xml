@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cfa.harvard.edu
+    Date: 2026-11-20T12:58:40 [V7.6.1]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO name="service_protocol" value="ASU">  IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name="request_date" value="2026-11-20T12:58:40">  Query execution date</INFO>
+<INFO name="request" value="https://vizier.cfa.harvard.edu/viz-bin/votable?-source=J%2FA%2BA%2F682%2FA34%2Ferass1-m&amp;-c=140.7857+-61.7383&amp;-c.rs=90&amp;-out=IAUName%2CRA_ICRS%2CDE_ICRS%2CMLFlux1%2Cs_MLFlux1&amp;-out.add=_r&amp;-out.max=101">  Full request URL</INFO>
+<INFO name="contact" value="cds-question@unistra.fr">  Email or URL to contact publisher</INFO>
+<INFO name="server_software" value="VizieR/7.6.1">  Software version</INFO>
+<INFO name="publisher" value="CDS">  Data centre that produced the VOTable</INFO>
+
+<!--
+Execution Reports
+ -->
+<INFO ID="Target" name="-c" value="140.785700-61.738300,rs=90.">
+Constraint -out.max=101</INFO>
+
+<RESOURCE ID="yCat_36820034" name="J/A+A/682/A34" type="results">
+  <DESCRIPTION>SRG/eROSITA all-sky survey catalogs (eRASS1) (Merloni+, 2024)</DESCRIPTION>  <INFO name="ivoid" value="ivo://cds.vizier/j/a+a/682/a34">    IVOID of underlying data collection  </INFO>
+  <INFO name="data_ivoid" value="ivo://cds.vizier/j/a+a/682/a34">    IVOID of underlying data collection  </INFO>
+  <INFO name="creator" value="Merloni A.">    First author or institution  </INFO>
+  <INFO name="cites" value="bibcode:2024A&amp;A...682A..34M">    Article or Data origin sources  </INFO>
+  <INFO name="journal" value="A&amp;A">    Journal name  </INFO>
+  <INFO name="original_date" value="2024">    Year of the article publication  </INFO>
+  <INFO name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/682/A34">    Dataset landing page  </INFO>
+  <INFO name="citation" value="doi:10.26093/cds/vizier.36820034">    Dataset identifier that can be used for citation  </INFO>
+  <INFO name="publication_date" value="2026-09-29">    Date of first publication in the data centre  </INFO>
+  <INFO name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">    Licence URI  </INFO>
+
+  <COOSYS ID="H" system="ICRS"/>
+  <TABLE ID="J_A_A_682_A34_erass1-m" name="J/A+A/682/A34/erass1-m">
+    <DESCRIPTION>All extended X-ray sources and all point-like X-ray sources with detection likelihood &gt;6, detected over a broad 0.2-2.3keV band</DESCRIPTION>
+<!-- All extended X-ray sources and all point-like X-ray sources with detection likelihood &gt;6, detected over a broad 0.2-2.3keV band (\originalcolumnnames) -->
+
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/A+A/682/A34/erass1-m -->
+    <FIELD name="_r" ucd="pos.angDistance" datatype="double" width="6" precision="3"><!-- ucd="POS_ANG_DIST_GENERAL" -->
+      <DESCRIPTION>Distance from center (140.78570000000-61.73830000000)[ICRS]</DESCRIPTION>
+    </FIELD>
+    <FIELD name="IAUName" ucd="meta.id;meta.main" datatype="char" arraysize="23"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>String containing the official IAU name of the source (IAUNAME) (1eRASS JHHMMSS.s+DDMMSS)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="RA_ICRS" ucd="pos.eq.ra;meta.main" ref="H" datatype="double" width="15" precision="11" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Right ascension (ICRS), corrected (RA)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="DE_ICRS" ucd="pos.eq.dec;meta.main" ref="H" datatype="double" width="15" precision="11" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Declination (ICRS), corrected (DEC)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="MLFlux1" ucd="phot.flux;em.X-ray" datatype="double" width="15" precision="E8" unit="mW.m**-2"><!-- ucd="PHOT_FLUX_X" -->
+      <DESCRIPTION>Source flux in 0.2-2.3keV band (ML_FLUX_1)</DESCRIPTION>
+    </FIELD>
+    <FIELD name="s_MLFlux1" ucd="stat.error;phot.flux;em.X-ray.soft" datatype="double" width="15" precision="E8" unit="mW.m**-2"><!-- ucd="ERROR" -->
+      <DESCRIPTION>? 1-sigma combined error on flux in 0.2-2.3keV band (ML_FLUX_ERR_1)</DESCRIPTION>
+      <VALUES null="NaN" />
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>1.023</TD><TD>1eRASS J092308.5-614418</TD><TD>140.78572174001</TD><TD>-61.73858400558</TD><TD>1.55737944e-13</TD><TD>2.26417921e-14</TD></TR>
+<TR><TD>85.074</TD><TD>1eRASS J092257.6-614343</TD><TD>140.74000095539</TD><TD>-61.72880833890</TD><TD>2.19794462e-14</TD><TD>9.31824842e-15</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="2">matching records</INFO>
+</RESOURCE>
+</VOTABLE>

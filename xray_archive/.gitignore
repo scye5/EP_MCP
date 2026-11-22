@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+/test_data/
+/positions.json
+/*.xml
+/*.fits
+/*.fits.gz
+/*.fits.Z
+/rosat-history.json

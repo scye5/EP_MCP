@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://www.ivoa.net/xml/VOTable/v1.3"
+  xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3">
+ <DESCRIPTION>
+   VizieR Astronomical Server vizier.cfa.harvard.edu
+    Date: 2026-11-20T12:58:53 [V7.6.1]
+   Explanations and Statistics of UCDs:			See LINK below
+   In case of problem, please report to:	cds-question@unistra.fr
+ </DESCRIPTION>
+<!-- VOTable description at http://www.ivoa.net/Documents/latest/VOT.html -->
+<INFO name="service_protocol" value="ASU">  IVOID of the protocol through which the data was retrieved</INFO>
+<INFO name="request_date" value="2026-11-20T12:58:53">  Query execution date</INFO>
+<INFO name="request" value="https://vizier.cfa.harvard.edu/viz-bin/votable?-source=J%2FA%2BA%2F588%2FA103%2Fcat2rxs&amp;-c=187.2779+%2B2.0524&amp;-c.rs=90&amp;-out=2RXS%2CRAJ2000%2CDEJ2000%2CCRate%2Ce_CRate%2CFluxp&amp;-out.add=_r">  Full request URL</INFO>
+<INFO name="contact" value="cds-question@unistra.fr">  Email or URL to contact publisher</INFO>
+<INFO name="server_software" value="VizieR/7.6.1">  Software version</INFO>
+<INFO name="publisher" value="CDS">  Data centre that produced the VOTable</INFO>
+<INFO name="MaxTuples" value="50000" />
+
+<!--
+Execution Reports
+ -->
+<INFO ID="Target" name="-c" value="187.277900+02.052400,rs=90.">
+Constraint -out.add=_r</INFO>
+
+<RESOURCE ID="yCat_35880103" name="J/A+A/588/A103" type="results">
+  <DESCRIPTION>Second ROSAT all-sky survey (2RXS) source catalog (Boller+, 2016)</DESCRIPTION>  <INFO name="ivoid" value="ivo://cds.vizier/j/a+a/588/a103">    IVOID of underlying data collection  </INFO>
+  <INFO name="data_ivoid" value="ivo://cds.vizier/j/a+a/588/a103">    IVOID of underlying data collection  </INFO>
+  <INFO name="creator" value="Boller T.">    First author or institution  </INFO>
+  <INFO name="cites" value="bibcode:2016A&amp;A...588A.103B">    Article or Data origin sources  </INFO>
+  <INFO name="journal" value="A&amp;A">    Journal name  </INFO>
+  <INFO name="original_date" value="2016">    Year of the article publication  </INFO>
+  <INFO name="reference_url" value="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/588/A103">    Dataset landing page  </INFO>
+  <INFO name="citation" value="doi:10.26093/cds/vizier.35880103">    Dataset identifier that can be used for citation  </INFO>
+  <INFO name="publication_date" value="2017-06-13">    Date of first publication in the data centre  </INFO>
+  <INFO name="rights_uri" value="https://cds.unistra.fr/vizier-org/licences_vizier.html">    Licence URI  </INFO>
+
+  <COOSYS ID="J2000" system="eq_FK5" equinox="J2000"/>
+  <TABLE ID="J_A_A_588_A103_cat2rxs" name="J/A+A/588/A103/cat2rxs">
+    <DESCRIPTION>Catalogue of 135118 2RXS ROSAT sources</DESCRIPTION>
+<!-- Catalogue of 135118 2RXS ROSAT sources (\originalcolumnnames); {\fg{red4} the full fits table is available {\aFile{J/A+A/588/A103/cat2rxs.fits}{here} (59M, gzipped). }}There is a link to images, light curves and spectra at the end of the catalog -->
+
+    <!-- Definitions of GROUPs and FIELDs -->
+
+<!-- +++No column could be found to attach a LINK in table: J/A+A/588/A103/cat2rxs -->
+    <FIELD name="_r" ucd="pos.angDistance" datatype="double" width="5" precision="2"><!-- ucd="POS_ANG_DIST_GENERAL" -->
+      <DESCRIPTION>Distance from center (187.27790+02.05240)[FK5/J2000]</DESCRIPTION>
+    </FIELD>
+    <FIELD name="2RXS" ucd="meta.id;meta.main" datatype="char" arraysize="21"><!-- ucd="ID_MAIN" -->
+      <DESCRIPTION>IAU name (IAU_NAME) (1)</DESCRIPTION>
+<!-- IAU name (\original{IAU_NAME}) (1) -->
+
+    </FIELD>
+    <FIELD name="RAJ2000" ucd="pos.eq.ra;meta.main" ref="J2000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_RA_MAIN" -->
+      <DESCRIPTION>Right ascension (J2000) (RA_DEG)</DESCRIPTION>
+<!-- Right ascension (J2000) (\original{RA_DEG}) -->
+
+    </FIELD>
+    <FIELD name="DEJ2000" ucd="pos.eq.dec;meta.main" ref="J2000" datatype="double" width="9" precision="5" unit="deg"><!-- ucd="POS_EQ_DEC_MAIN" -->
+      <DESCRIPTION>Declination (J2000) (DEC_DEG)</DESCRIPTION>
+<!-- Declination (J2000) (\original{DEC_DEG}) -->
+
+    </FIELD>
+    <FIELD name="CRate" ucd="phot.count;em.X-ray" datatype="double" width="8" precision="4" unit="ct/s"><!-- ucd="PHOT_COUNT-RATE_X" -->
+      <DESCRIPTION>Source count rate (RATE)</DESCRIPTION>
+<!-- Source count rate (\original{RATE}) -->
+
+    </FIELD>
+    <FIELD name="e_CRate" ucd="stat.error" datatype="float" width="7" precision="4" unit="ct/s"><!-- ucd="ERROR" -->
+      <DESCRIPTION>Error of the count rate (ERATE)</DESCRIPTION>
+<!-- Error of the count rate (\original{ERATE}) -->
+
+    </FIELD>
+    <FIELD name="Fluxp" ucd="phot.flux;em.X-ray" datatype="float" width="11" precision="E4" unit="mW.m**-2"><!-- ucd="PHOT_FLUX_X" -->
+      <DESCRIPTION>? Absorption corrected flux of PL-fit (FLUX_p)</DESCRIPTION>
+<!-- ? Absorption corrected flux of PL-fit (\original{FLUX_p}) -->
+
+      <VALUES null="NaN" />
+    </FIELD>
+<DATA><TABLEDATA>
+<TR><TD>1.27</TD><TD>2RXS J122906.6+020309</TD><TD>187.27773</TD><TD>+02.05271</TD><TD>7.8635</TD><TD>0.1474</TD><TD>9.8390e-11</TD></TR>
+</TABLEDATA></DATA>
+</TABLE>
+<INFO name="matches" value="1">matching records</INFO>
+</RESOURCE>
+</VOTABLE>

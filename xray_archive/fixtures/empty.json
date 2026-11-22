@@ -1,0 +1,24 @@
+[
+{
+    "_bkgimage": "NotSet",
+    "_dec": "5.678",
+    "_eef": "Null",
+    "_ehigh": 12.0,
+    "_elow": 0.2,
+    "_expmap": "Null",
+    "_filt": "Medium",
+    "_image": "Null",
+    "_instrum": "EPIC-pn",
+    "_label": "target",
+    "_mission": "XMM-Newton pointed",
+    "_model": [
+        3e+20,
+        "plaw",
+        1.7
+    ],
+    "_obsid": "Null",
+    "_ra": "15.234",
+    "_status": "NoDataFound",
+    "_ulsig": 2
+}
+]

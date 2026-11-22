@@ -1,0 +1,35 @@
+[
+{
+    "_bck_counts": "0.8843009720999999",
+    "_bkgimage": "NotSet",
+    "_crate": "7.8635",
+    "_crate_err": "0.1474",
+    "_crate_flux": 8.484716500000001e-11,
+    "_crate_flux_err": 1.590446e-12,
+    "_dec": "2.0524",
+    "_eef": 1.0,
+    "_ehigh": 2.0,
+    "_elow": 0.2,
+    "_end_date": "1990-12-20 22:04:27",
+    "_expmap": "931734_exposure.fits",
+    "_exptime": "368.27",
+    "_filt": "Open",
+    "_image": "931734_image4.fits",
+    "_instrum": "ROSAT-PSPC",
+    "_label": "target",
+    "_mission": "ROSAT-Survey",
+    "_model": [
+        3e+20,
+        "plaw",
+        1.7
+    ],
+    "_obsid": "931734",
+    "_ra": "187.2779",
+    "_src_counts": "2895.94",
+    "_start_date": "1990-12-19 01:15:26",
+    "_status": "Ok",
+    "_ul": null,
+    "_ul_flux": " ",
+    "_ulsig": "3"
+}
+]
