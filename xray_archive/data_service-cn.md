@@ -30,20 +30,20 @@ python rosat.py download 'https://nasa-heasarc.s3.amazonaws.com/rosat/data/pspc/
 python rosat.py products --prefix rosat/data/
 ```
 
-对于跨任务上限，现有的 `archive.query_hiligt` 接受 `RosatSurvey`、`RosatPointedPSPC` 与 `RosatPointedHRI`。在与 EP 比较上限前，请先选择显著性水平与光谱模型。HEASARC 还提供交互式 Browse/Xamin、VO 图像发现、SkyView 图像剪切以及 Astroquery 方法，用于定位与下载相关产品。[HiLIGT](https://xmmuls.esac.esa.int/upperlimitserver/) · [HEASARC 服务目录](https://heasarc.gsfc.nasa.gov/docs/archive/apis.html)
+对于跨任务上限，现有的 `archive.query_hiligt` 接受 `RosatSurvey`、`RosatPointedPSPC` 与 `RosatPointedHRI`。在与 EP 比较上限前，请先选择显著性水平与光谱模型。HEASARC 还提供交互式 Browse/Xamin、VO 图像发现、SkyView 图像裁剪以及 Astroquery 方法，用于定位与下载相关产品。[HiLIGT](https://xmmuls.esac.esa.int/upperlimitserver/) · [HEASARC 服务目录](https://heasarc.gsfc.nasa.gov/docs/archive/apis.html)
 
 ## eROSITA
 
 官方 eRODat API 参考中的四个操作分别暴露为 `cone`、`limit`、`limits` 与 `tiles`。使用 `cone --verb 1` 获取最小的星表列集，`--verb 2` 获取中间输出，或使用默认的 `--verb 3` 获取全部列。[eRODat API](https://erosita.mpe.mpg.de/erodat/apis/)
 
-使用官方的简单锥形搜索（Simple Cone Search）获取星表行，使用瓦片服务发现产品。锥形搜索上限为 5°。支持的星表为 `DR2_Main`、`DR2_Hard`、`DR1_Main`、`DR1_Hard`、`DR1_Supp` 与 `DR1_Clusters`。瓦片响应包含瓦片编号（`srvmap`）、覆盖区与中心。数值型瓦片 ID 请格式化为六位数字，保留前导零。[eRODat API 规范](https://erosita.mpe.mpg.de/erodat/apis/)
+使用官方的简单锥形搜索（Simple Cone Search）获取星表行，使用天区服务发现产品。锥形搜索上限为 5°。支持的星表为 `DR2_Main`、`DR2_Hard`、`DR1_Main`、`DR1_Hard`、`DR1_Supp` 与 `DR1_Clusters`。天区响应包含天区编号（`srvmap`）、覆盖区与中心。数值型天区 ID 请格式化为六位数字，保留前导零。[eRODat API 规范](https://erosita.mpe.mpg.de/erodat/apis/)
 
 ```bash
 python erosita.py cone 194 -5.7 --catalog DR2_Main --radius 0.025 > sources.xml
 python erosita.py tiles 194 -5.7
 ```
 
-对于单个已归档产品，请选择发布版本与产品系列。示例列出瓦片 275135 的 DR1 探测产品，并下载其单能段面积曲线。同一个列出命令也适用于可用的产品目录，如 `EXP_010` 与 `UPP_010`。浏览器下载区会显示每个瓦片可用的分组。eRODat 还提供下载篮（download basket），以及用于更大数据集的独立镜像脚本。DR2 星表页面提供整表下载。[下载区](https://erosita.mpe.mpg.de/erodat/data/download/) · [镜像说明](https://erosita.mpe.mpg.de/dr1/AllSkySurveyData_dr1/mirroring.html) · [DR2 星表访问](https://erosita.mpe.mpg.de/dr2/AllSkySurveyData_dr2/)
+对于单个已归档产品，请选择发布版本与产品系列。示例列出天区 275135 的 DR1 探测产品，并下载其单能段面积曲线。同一个列出命令也适用于可用的产品目录，如 `EXP_010` 与 `UPP_010`。浏览器下载区会显示每个天区可用的分组。eRODat 还提供下载篮（download basket），以及用于更大数据集的独立镜像脚本。DR2 星表页面提供整表下载。[下载区](https://erosita.mpe.mpg.de/erodat/data/download/) · [镜像说明](https://erosita.mpe.mpg.de/dr1/AllSkySurveyData_dr1/mirroring.html) · [DR2 星表访问](https://erosita.mpe.mpg.de/dr2/AllSkySurveyData_dr2/)
 
 ```bash
 python erosita.py products 275135 DET_010
